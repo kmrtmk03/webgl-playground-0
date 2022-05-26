@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import ThreeScene from './threeScene'
+import myScene from './myScene'
 export default {
   name: 'ThreeScene',
   data() {
@@ -23,7 +23,7 @@ export default {
     }
   },
   mounted() {
-    this.scene = new ThreeScene({
+    this.scene = new myScene({
       $canvas: this.$refs.canvas,
       $modelName: this.modelName,
       $baseUrl: this.baseUrl,

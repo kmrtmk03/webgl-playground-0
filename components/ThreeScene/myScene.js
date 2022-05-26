@@ -9,11 +9,8 @@ import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass.js';
 import { BloomPass } from 'three/examples/jsm/postprocessing/BloomPass.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
-import { MeshBasicMaterial } from 'three'
-import { Color } from 'three'
-import { MeshLambertMaterial } from 'three'
 
-export default class ThreeScene {
+export default class myScene {
   constructor(props) {
     // 設定
     this.canvas = props.$canvas
