@@ -1,6 +1,6 @@
 <template lang="pug">
   .page
-    ThreeScene
+    Shader
 </template>
 
 <script>

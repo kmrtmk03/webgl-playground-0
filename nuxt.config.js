@@ -46,7 +46,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
   ],
 
   styleResources: {
@@ -64,6 +64,11 @@ export default {
         sassOptions: {
           fiber: Fiber
         }
+      }
+    },
+    extend (config, ctx) {
+      if (!!config.module) {
+        config.module.rules.push({ test: /\.(vert|frag)$/i, use: ["raw-loader"] });
       }
     },
   },

@@ -12,6 +12,7 @@
 
 <script>
 import myScene from './myScene'
+
 export default {
   name: 'ThreeScene',
   data() {
